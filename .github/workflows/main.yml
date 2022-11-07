@@ -1,0 +1,25 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Issue Time CI
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  test:
+    # The type of runner that the job will run on
+    runs-on: win-babi
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: guguducken/issue-time-action@notice_group
+        with: 
+          token_action: ${{ secrets.ACTION_TOKEN }}
+          warning_time: "24 72 168"
+          uri_warn: ${{ secrets.MATRIXONE_HOOK }}
+          label_check: "severity/s-1,severity/s0,severity/s1"
