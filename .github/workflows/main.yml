@@ -23,3 +23,6 @@ jobs:
           warning_time: "24 72 168"
           uri_warn: ${{ secrets.MATRIXONE_HOOK }}
           label_check: "severity/s-1,severity/s0,severity/s1"
+          repo_name: "matrixone"
+          repo_owner: "matrixorigin"
+          mentions: "秦姝琦,贾节杰"
