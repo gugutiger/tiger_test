@@ -25,4 +25,4 @@ jobs:
           label_check: "severity/s-1,severity/s0,severity/s1"
           repo_name: "matrixone"
           repo_owner: "matrixorigin"
-          mentions: "秦姝琦,贾节杰"
+          mentions: "shuqi.qin,JiejieJia"
